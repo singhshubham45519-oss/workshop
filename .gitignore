@@ -1,6 +1,29 @@
+# Environment secrets
 .env
+.ENV
+.env.*
+!.env.example
+!.ENV.example
+
+# Python environments, bytecode, and caches
 venv/
+.venv/
 backend/.agents/
 __pycache__/
 *.py[cod]
 *.log
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Frontend dependencies and generated builds
+node_modules/
+dist/
+build/
+.next/
+coverage/
+
+# Downloaded archives and OS metadata
+*.zip
+.DS_Store
+Thumbs.db
