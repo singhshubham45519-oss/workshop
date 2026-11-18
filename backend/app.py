@@ -35,6 +35,11 @@ def database_error(error):
     return api_error("Database request failed", 500)
 
 
+@app.get("/health")
+def health():
+    return jsonify({"status": "ok"}), 200
+
+
 @app.get("/")
 def index():
     return jsonify({"message": "Events API", "endpoints": [
