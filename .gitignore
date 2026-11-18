@@ -1,0 +1,6 @@
+.env
+venv/
+backend/.agents/
+__pycache__/
+*.py[cod]
+*.log
